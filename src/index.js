@@ -261,7 +261,8 @@ export default class ActionSheet extends Component {
                     <TouchableOpacity
                         onPress={() => {this.hide();}}
                         activeOpacity={1}
-                        style={styles.flex1}>
+                        style={styles.flex1}
+                        accessible={false}>
                     </TouchableOpacity>
 
                     <Animated.View

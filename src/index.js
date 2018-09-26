@@ -269,7 +269,7 @@ export default class ActionSheet extends Component {
                             styles.container,
                             {borderColor: this.state.separateColor},
                             this.state.containerStyle,
-                            {height: this.state.containerHeight},
+                            {minHeight: this.state.containerHeight},
                             {transform: [{translateY: this.state.fadeAnim.interpolate({inputRange: [0, 1],outputRange: [this.state.containerHeight, 0]})}]}
                             ]}
                     >
@@ -284,7 +284,7 @@ export default class ActionSheet extends Component {
 
 const styles = StyleSheet.create({
     item: {
-        height: kDefaultItemHeight,
+        minHeight: kDefaultItemHeight,
         backgroundColor: '#ffffff',
         justifyContent: 'center',
         alignItems: 'center'
